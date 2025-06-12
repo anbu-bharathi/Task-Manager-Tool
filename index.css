@@ -9,7 +9,7 @@ body {
     color: black;
 }
 
-.navbar {
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,28 +18,28 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .05);
 }
 
-.logo {
+#logo {
     font-size: 24px;
     font-weight: bold;
-    color: lightblue;
+    color: #022aab;
 }
 
 .nav-links a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: 500;
-    color: lightblue;
+    color: #022aab;
 }
 
 .login-btn {
-    background-color: lightblue;
+    background-color: #022aab;
     color: white;
     padding: 8px 16px;
     border-radius: 25px;
     text-decoration: none;
 }
 
-.homepage {
+#homepage {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,22 +47,22 @@ body {
     gap: 50px;
 }
 
-.homepage img {
+#homepage img {
     width: 500px;
     max-width: 100%;
 }
 
-.homepage-content {
+#homepage-content {
     max-width: 500px;
 }
 
-.homepage-content h1 {
+#homepage-content h1 {
     font-size: 42px;
     margin-bottom: 20px;
     color: #333
 }
 
-.homepage-content p {
+#homepage-content p {
     font-size: 16px;
     line-height: 1.6;
     color: #555;
@@ -70,8 +70,12 @@ body {
     ;
 }
 
+#header {
+    color: red;
+}
+
 .learn-more-btn {
-    background-color: lightblue;
+    background-color: #022aab;
     color: white;
     padding: 12px 24px;
     text-decoration: none;
