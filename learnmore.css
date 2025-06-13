@@ -1,12 +1,108 @@
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        margin: 0;
-        padding: 40px;
-        background-color: red;
-        color: #333;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('images/background.avif') no-repeat center center/cover;
+    min-height: 100vh;
+    position: relative;
+    padding: 50px 20px;
+    overflow-x: hidden;
+}
+
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 80, 0.6);
+    z-index: 1;
+}
+
+
+#container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+#header {
+    font-size: 36px;
+    color: #022aab;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#container p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+#container p:hover {
+    color: #022aab;
+}
+
+
+ul {
+    margin: 15px 0 25px 20px;
+    padding-left: 20px;
+    color: #444;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateX(8px);
+    color: #022aab;
+}
+
+/* Home Button */
+#home-button {
+    display: inline-block;
+    background-color: #022aab;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#home-button:hover {
+    background-color: #3b64ff;
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
     }
-    
-    .container {
-        max-width: 900px;
-        margin: auto;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
